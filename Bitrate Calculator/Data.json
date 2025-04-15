@@ -1,0 +1,41 @@
+{
+  "Device": "Arista",
+  "Model": "X-Video",
+  "NIC": [
+    {
+      "Description": "Linksys ABR",
+      "MAC": "14:91:82:3C:D6:7D",
+      "Timestamp": "2020-03-23T18:25:43.511Z",
+      "Rx": "1000000",
+      "Tx": "500000"
+    },
+    {
+      "Description": "Linksys ABR",
+      "MAC": "14:91:82:3C:D6:7D",
+      "Timestamp": "2020-03-23T18:25:44.011Z",
+      "Rx": "1000800",
+      "Tx": "500120"
+    },
+    {
+      "Description": "Linksys ABR",
+      "MAC": "14:91:82:3C:D6:7D",
+      "Timestamp": "2020-03-23T18:25:44.511Z",
+      "Rx": "999000",       
+      "Tx": "500120"        
+    },
+    {
+      "Description": "Linksys ABR",
+      "MAC": "14:91:82:3C:D6:7D",
+      "Timestamp": "2020-03-23T18:25:45.011Z",
+      "Rx": "999500",
+      "Tx": "499500"        
+    },
+    {
+      "Description": "Linksys ABR",
+      "MAC": "14:91:82:3C:D6:7D",
+      "Timestamp": "2020-03-23T18:25:45.511Z",
+      "Rx": "1000500",      
+      "Tx": "500000"        
+    }
+  ]
+}
