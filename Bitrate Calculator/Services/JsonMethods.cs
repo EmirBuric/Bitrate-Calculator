@@ -1,4 +1,5 @@
-﻿using Bitrate_Calculator.Models;
+﻿using Bitrate_Calculator.Interfaces;
+using Bitrate_Calculator.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -6,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bitrate_Calculator
+namespace Bitrate_Calculator.Services
 {
-    public class JsonMethods
+    public class JsonMethods : IJsonMethods
     {
         public DeviceData LoadJson()
         {

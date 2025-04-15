@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 
 namespace Bitrate_Calculator.Models
 {
-
-
-
     public class DeviceData
     {
         public string Device { get; set; }
