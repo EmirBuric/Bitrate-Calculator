@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Bitrate_Calculator.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,10 +16,6 @@ namespace Bitrate_Calculator
             string json = r.ReadToEnd();
             DeviceData items = JsonConvert.DeserializeObject<DeviceData>(json);
             return items;
-
-        }
-        public void Read()
-        {
 
         }
     }

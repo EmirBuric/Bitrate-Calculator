@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Bitrate_Calculator;
+using Bitrate_Calculator.Models;
 
 
 JsonMethods jsonMethods = new JsonMethods();
@@ -14,12 +15,12 @@ Console.WriteLine($"MAC Adress: {items.NIC[0].MAC}");
 
 for (int i = 1;i< items.NIC.Count;i++)
 {
-    Calculator calculatorTx = new Calculator(items.NIC[i-1].Tx, items.NIC[i].Tx);
-    Calculator calculatorRx = new Calculator(items.NIC[i-1].Rx, items.NIC[i].Rx);
+    Calculator calculatorTx = new Calculator();
+    Calculator calculatorRx = new Calculator();
     Console.WriteLine("Tx bitrate: ");
-    calculatorTx.Calc();
+    calculatorTx.Calc(items.NIC[i - 1].Tx, items.NIC[i].Tx, items.NIC[i - 1].Timestamp, items.NIC[i].Timestamp);
     Console.WriteLine("Rx bitrate: ");
-    calculatorRx.Calc();
+    calculatorRx.Calc(items.NIC[i - 1].Rx, items.NIC[i].Rx, items.NIC[i - 1].Timestamp, items.NIC[i].Timestamp);
 }
 
 
