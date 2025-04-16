@@ -4,7 +4,9 @@ using Bitrate_Calculator.Services;
 
 
 JsonMethods jsonMethods = new JsonMethods();
-DeviceData items=jsonMethods.LoadJson();
+DataStrings itemStrings=jsonMethods.LoadJson();
+
+DeviceData items= jsonMethods.ManualParse(itemStrings);
 
 Console.WriteLine($"Device: {items.Device}");
 Console.WriteLine($"Model: {items.Model}");

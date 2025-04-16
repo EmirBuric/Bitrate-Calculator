@@ -9,6 +9,7 @@ namespace Bitrate_Calculator.Interfaces
 {
     public interface IJsonMethods
     {
-        public DeviceData LoadJson();
+        public DataStrings LoadJson();
+        public DeviceData ManualParse(DataStrings dataStrings);
     }
 }
