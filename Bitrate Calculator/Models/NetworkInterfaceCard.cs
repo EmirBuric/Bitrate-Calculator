@@ -11,7 +11,7 @@ namespace Bitrate_Calculator.Models
         public string Description { get; set; }
         public string MAC { get; set; }
         public DateTime Timestamp { get; set; }
-        public long Rx { get; set; }
-        public long Tx { get; set; }
+        public ulong Rx { get; set; }
+        public ulong Tx { get; set; }
     }
 }

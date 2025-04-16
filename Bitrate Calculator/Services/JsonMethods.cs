@@ -35,14 +35,14 @@ namespace Bitrate_Calculator.Services
 
                 if (ulong.TryParse(dataStrings.NIC[i].Tx, out uTx))
                 {
-                    networkInterface.Tx = (long)uTx;
+                    networkInterface.Tx = uTx;
                 }
 
                 ulong uRx;
 
                 if (ulong.TryParse(dataStrings.NIC[i].Rx, out uRx))
                 {
-                    networkInterface.Rx = (long)uRx;
+                    networkInterface.Rx = uRx;
                 }
                 networkInterfaces.Add(networkInterface);
 

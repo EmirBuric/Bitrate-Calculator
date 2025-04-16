@@ -9,25 +9,21 @@ namespace Bitrate_Calculator.Services
 {
     public class Calculator : ICalculator
     {
-        public void Calc(long x1, long x2, DateTime dx1, DateTime dx2)
+        public void Calc(ulong x1, ulong x2, DateTime dx1, DateTime dx2)
         {
-            long delta = 0;
+            ulong delta = 0;
             if (x1 < x2)
             {
                 delta = x2 - x1;
             }
             else
             {
-                delta = long.MaxValue - x1 + (long.MinValue - x2);
+                delta = ulong.MaxValue - x1 + x2;
             }
             double duration = (dx2 - dx1).TotalSeconds;
-            long delta_bit = delta * 8;
-            if (delta_bit < 0)
-            {
-                delta_bit += long.MaxValue;
-            }
+            ulong delta_bit = delta * 8;
             double bitrate = delta_bit / duration / 1000;
-            Console.WriteLine($"Bitrate: {bitrate} kbit/s");
+            Console.WriteLine($"{bitrate} kbit/s");
         }
 
 

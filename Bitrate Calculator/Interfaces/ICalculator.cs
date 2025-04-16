@@ -8,6 +8,6 @@ namespace Bitrate_Calculator.Interfaces
 {
     public interface ICalculator
     {
-        public void Calc(long x1, long x2, DateTime dx1, DateTime dx2);
+        public void Calc(ulong x1, ulong x2, DateTime dx1, DateTime dx2);
     }
 }
