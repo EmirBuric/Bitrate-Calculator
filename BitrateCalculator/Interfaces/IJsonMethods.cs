@@ -1,11 +1,11 @@
-﻿using Bitrate_Calculator.Models;
+﻿using BitrateCalculator.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bitrate_Calculator.Interfaces
+namespace BitrateCalculator.Interfaces
 {
     public interface IJsonMethods
     {

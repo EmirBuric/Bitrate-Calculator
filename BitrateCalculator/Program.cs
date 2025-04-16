@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Bitrate_Calculator.Interfaces;
-using Bitrate_Calculator.Models;
-using Bitrate_Calculator.Services;
+using BitrateCalculator.Interfaces;
+using BitrateCalculator.Models;
+using BitrateCalculator.Services;
 using System.Globalization;
 
 

@@ -1,11 +1,11 @@
-﻿using Bitrate_Calculator.Interfaces;
+﻿using BitrateCalculator.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bitrate_Calculator.Services
+namespace BitrateCalculator.Services
 {
     public class Calculator : ICalculator
     {
